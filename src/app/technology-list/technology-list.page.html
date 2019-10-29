@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mobile Application Technologies</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let item of technologies">
+    <ion-item (click)="changeUrl(item)">
+      <ion-card-content>
+        <ion-label>{{ item?.name }} | {{ item?.description}}
+        </ion-label>
+      </ion-card-content>
+    </ion-item>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="technology-list"></ion-back-button>
+
+    </ion-buttons>
+    <ion-title> Technology </ion-title>
+    <!-- (click)="deleteStudent()" -->
+    <ion-button slot="end" (click)="deleteTechnology()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--<app-profile-detail></app-profile-detail>--->
+  <ion-card>
+    <img src="{{singleTechnology?.img}}" height="250px" />
+    <ion-card-header>
+      <ion-card-title>{{singleTechnology?.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{singleTechnology?.description}}
+
+
+    </ion-card-content>
+
+
+  </ion-card>
+</ion-content>
